@@ -23,8 +23,8 @@
       `src/lib.rs` (`kotoba.car-sim.color`, `kotoba.car-sim.controls`).
     * Does NOT port the soft-body node/beam mesh generation, the XPBD/
       implicit solver, or the Pacejka tire-force math — that is core
-      vehicle physics belonging to the (separate, not-yet-ported)
-      `kami-vehicle` crate/repo. `garage/spec-for` resolves a vehicle kind
+      vehicle physics belonging to the separate `kotoba-lang/kami-vehicle`
+      portable CLJC authority. `garage/spec-for` resolves a vehicle kind
       into exactly the config that physics layer needs to build a real
       `Vehicle`.
     * Does NOT port wgpu pipeline construction, WGSL shaders, WASD/mouse

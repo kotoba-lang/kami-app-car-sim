@@ -9,7 +9,7 @@
   overrides applied, the pure counterpart of Rust `garage::build_from_edn`
   / `garage::build`). It does NOT generate the soft-body node/beam mesh or
   run Pacejka/powertrain solver math — that is core vehicle physics and
-  belongs to the (separate, not-yet-ported) `kami-vehicle` physics crate;
+  belongs to the separate, now-restored `kotoba-lang/kami-vehicle` CLJC physics repo;
   a resolved spec from `spec-for` is exactly the input that crate/repo
   would need to instantiate a real `Vehicle`.
 

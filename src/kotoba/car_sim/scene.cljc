@@ -5,15 +5,16 @@
   `run_car_sim` boot sequence (`src/lib.rs`) minus everything that isn't
   pure config selection: no wgpu pipeline construction, no JS-global
   reads, no live `Vehicle` instantiation/stepping (that needs the
-  soft-body physics solver, which belongs to the separate, not-yet-ported
-  `kami-vehicle` physics crate/repo — see `kotoba.car-sim.garage`'s
+  soft-body physics solver, which belongs to the separately restored
+  `kotoba-lang/kami-vehicle` CLJC repo — see `kotoba.car-sim.garage`'s
   namespace doc).
 
   A host adapter (e.g. a WASM app wired to `kotoba-lang/vehicle` once it
   lands) is expected to: call `boot-config` once to resolve vehicle +
   ground selection into concrete specs, hand `:garage-spec` /
   `:ground-map` to the physics layer to build the real simulated vehicle
-  + ground, then drive the per-frame loop with `kotoba.car-sim.controls`
+  + ground (the restored portable implementation is `kotoba-lang/kami-vehicle`),
+  then drive the per-frame loop with `kotoba.car-sim.controls`
   + `kotoba.car-sim.ground/sample`.
 
   Pure data in, pure data out: no network, no I/O. Portable across
