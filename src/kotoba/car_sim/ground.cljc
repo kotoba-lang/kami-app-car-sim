@@ -12,7 +12,7 @@
   values shipped by the Rust `kami-vehicle`/`kami-vehicle-scene` crates
   (`SurfaceKind::coefficients/tint/display_name`, `MapGround::demo_circuit`)
   — kept as parity fixtures against ADR-2607010000's Rust source of truth."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── Surface table ───────────────────────────────────────────────────────────
 ;; id -> {:friction-mu .. :grip-modifier .. :tint [r g b] :name ".." :renderer-id N}

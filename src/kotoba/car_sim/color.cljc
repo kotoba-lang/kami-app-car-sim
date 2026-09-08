@@ -6,7 +6,7 @@
 
   Pure data in, pure data out: no network, no I/O. Portable across
   JVM / ClojureScript / SCI / GraalVM."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── Paint colour ─────────────────────────────────────────────────────────────
 
