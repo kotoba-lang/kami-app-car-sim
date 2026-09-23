@@ -1,5 +1,5 @@
 (ns kotoba.car-sim.scene-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.car-sim.ground :as ground]
             [kotoba.car-sim.scene :as scene]))
 

@@ -1,5 +1,5 @@
 (ns kotoba.car-sim.controls-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.car-sim.controls :as controls]))
 
 (deftest clamp-controls-test
