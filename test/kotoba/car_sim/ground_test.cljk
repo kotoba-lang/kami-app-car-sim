@@ -1,5 +1,5 @@
 (ns kotoba.car-sim.ground-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.car-sim.ground :as ground]))
 
 (deftest surfaces-table-test

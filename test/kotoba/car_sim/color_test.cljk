@@ -1,5 +1,5 @@
 (ns kotoba.car-sim.color-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [kotoba.car-sim.color :as color]))
 
 (deftest parse-color-hex-test
